@@ -13,20 +13,38 @@
   box-sizing: border-box;
   margin-top: 65px;
   width: 100%;
-  background-color: rgb(10, 132, 150);
+  background-color: rgb(48, 176, 199);
   height: 590px;
+  color: rgb(242, 242, 247);
 }
 .container3{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   text-align: center;
-  background-color: rgb(94, 92, 230);
+  /* background-color: rgb(94, 92, 230); */
+  background-color: rgb(229, 229, 234);
   padding-top: 20px;
-
+  
 }
 .container3 > h1{
   max-width: 50%;
   border-bottom: 1px solid;
   margin: 0 auto 30px auto;
   padding-bottom: 20px;
+ 
+}
+.container4{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100%;
+  height: 200px;
+  background-color: rgb(48, 176, 199);
+  text-align: center;
 }
 
 #navbar{
@@ -34,7 +52,6 @@
     display: flex;
     justify-content: flex-end;
     position: fixed;
-
     width: 100%;
     
 }
@@ -44,12 +61,19 @@
     color: rgb(242, 242, 247);
     padding: 20px 50px 20px 20px;
 }
+#navbar > div > a{
+  text-decoration: none;
+  color: rgb(209, 209, 214);
+}
 
 #welcome-section{
-  margin: auto 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  margin: auto 0;
+  align-items: center;
 }
 #welcome-section > h1{
   
@@ -83,7 +107,7 @@
   padding-bottom: 20px;
 }
 .project-title{
-  color: rgb(242, 242, 247);
+  color: rgb(209, 209, 214);
 }
 .project-tile >img{
   width: 100%;
@@ -94,6 +118,26 @@
 }
 .project-tile > a{
   text-decoration: none;
+}
+.show{
+   margin-bottom: 30px;
+  
+}
+.show > a{
+    text-decoration: none;
+    color: rgb(10, 132, 255);
+    padding: 10px;
+}
+.logo-link{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 500px;
+}
+.logo-link > a{
+  text-decoration: none;
+  color: rgb(37, 36, 113);
+  font-size: 16px;
 }
 
 @media (max-width: 1000px){
@@ -126,10 +170,14 @@
     
   }
 
-
   .container3 > h1{
     max-width: 100%;
     border-bottom: none;
     padding: 0 20px 0 20px;
+  }
+  .logo-link{
+    display: flex;
+    width: 200px;
+   
   }
 }
